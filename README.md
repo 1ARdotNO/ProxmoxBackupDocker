@@ -1,5 +1,5 @@
 # ProxmoxBackupDocker
-
+![Docker Image CI](https://github.com/OvrAp3x/ProxmoxBackupDocker/workflows/Docker%20Image%20CI/badge.svg)
 Docker container for running proxmox backup server in docker,
 
 Current limitations,
