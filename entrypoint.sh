@@ -2,9 +2,9 @@
 
 
 
-# Start the first process
+# Start the second process
 ./usr/lib/x86_64-linux-gnu/proxmox-backup/proxmox-backup-api &
-sleep 10
+
 # Start the second process
 ./usr/lib/x86_64-linux-gnu/proxmox-backup/proxmox-backup-proxy &
 
