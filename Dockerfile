@@ -10,9 +10,10 @@ RUN wget http://download.proxmox.com/debian/proxmox-ve-release-6.x.gpg -O /etc/a
 
 #Install packages
 RUN apt-get update
-RUN apt-get install proxmox-backup -y
+RUN apt-get install proxmox-backup-server -y
 
 #start!
+
 COPY entrypoint.sh /
 RUN chmod a+x /entrypoint.sh
 STOPSIGNAL SIGINT
