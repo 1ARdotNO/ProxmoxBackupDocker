@@ -8,6 +8,7 @@ chmod -R 700 /etc/proxmox-backup
 #Fix user accounts
 chsh -s /bin/bash backup
 usermod -a -G backup root
+usermod -g backup root
 echo root:$ROOT_PASSWD | chpasswd
 
 # Start the first process
