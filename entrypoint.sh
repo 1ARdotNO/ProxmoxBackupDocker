@@ -6,10 +6,10 @@ chmod -R 700 /etc/proxmox-backup
 #switch user for run
 
 # Start the first process
-/bin/su -c /usr/lib/x86_64-linux-gnu/proxmox-backup/proxmox-backup-api - backup
+/bin/su backup -c /usr/lib/x86_64-linux-gnu/proxmox-backup/proxmox-backup-api
 sleep 10
 # Start the second process
-/bin/su -c ./usr/lib/x86_64-linux-gnu/proxmox-backup/proxmox-backup-proxy - backup
+/bin/su backup -c /usr/lib/x86_64-linux-gnu/proxmox-backup/proxmox-backup-proxy
 
 while /bin/true; do
   sleep 60
