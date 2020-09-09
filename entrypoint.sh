@@ -3,7 +3,8 @@
 #fix ownership
 chown -R backup:backup /etc/proxmox-backup
 chmod -R 700 /etc/proxmox-backup
-
+#switch user for run
+su backup
 # Start the first process
 ./usr/lib/x86_64-linux-gnu/proxmox-backup/proxmox-backup-api &
 sleep 10
