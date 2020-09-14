@@ -13,10 +13,10 @@ usermod -aG sudo backup
 echo root:$ROOT_PASSWD | chpasswd
 
 # Start the first process
-sudo /usr/lib/x86_64-linux-gnu/proxmox-backup/proxmox-backup-api
+sudo -u backup /usr/lib/x86_64-linux-gnu/proxmox-backup/proxmox-backup-api
 sleep 10
 # Start the second process
-sudo /usr/lib/x86_64-linux-gnu/proxmox-backup/proxmox-backup-proxy
+sudo -u backup /usr/lib/x86_64-linux-gnu/proxmox-backup/proxmox-backup-proxy
 
 while /bin/true; do
   sleep 60
