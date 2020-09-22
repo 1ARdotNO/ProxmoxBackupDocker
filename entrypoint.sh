@@ -10,7 +10,7 @@ chsh -s /bin/bash backup
 usermod -a -G backup root
 usermod -g backup root
 usermod -aG sudo backup
-echo root:$ROOT_PASSWD | chpasswd
+echo 'root:$ROOT_PASSWD' | chpasswd
 
 # Start the first process
 sudo -u backup /usr/lib/x86_64-linux-gnu/proxmox-backup/proxmox-backup-api
